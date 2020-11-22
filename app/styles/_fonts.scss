@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'avenirlt-black';
+  src: url('../fonts/AvenirLT-Black.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Black.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-oblique';
+  src: url('../fonts/AvenirLT-Oblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-blackoblique';
+  src: url('../fonts/AvenirLT-BlackOblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-BlackOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-roman';
+  src: url('../fonts/AvenirLT-Roman.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-heavy';
+  src: url('../fonts/AvenirLT-Heavy.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-bookoblique';
+  src: url('../fonts/AvenirLT-BookOblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-BookOblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-light';
+  src: url('../fonts/AvenirLT-Light.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-lightoblique';
+  src: url('../fonts/AvenirLT-LightOblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-LightOblique.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-book';
+  src: url('../fonts/AvenirLT-Book.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-mediumoblique';
+  src: url('../fonts/AvenirLT-MediumOblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-MediumOblique.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-medium';
+  src: url('../fonts/AvenirLT-Medium.woff2') format('woff2'),
+    url('../fonts/AvenirLT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirlt-heavyoblique';
+  src: url('../fonts/AvenirLT-HeavyOblique.woff2') format('woff2'),
+    url('../fonts/AvenirLT-HeavyOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+$font-roman:        'avenirlt-roman';
+$font-medium:       'avenirlt-medium';
+$font-black:        'avenirlt-black';
+$font-heavy:        'avenirlt-heavy';
+
+$font-light:        'avenirlt-light';
+$font-book:         'avenirlt-book';
+
+$font-oblique:      'avenirlt-oblique';
+$font-mediumoblique:'avenirlt-mediumoblique';
+$font-blackoblique: 'avenirlt-blackoblique';
+$font-heavyoblique: 'avenirlt-heavyoblique';
+
+$font-lightoblique: 'avenirlt-lightoblique';
+$font-bookoblique:  'avenirlt-bookoblique';

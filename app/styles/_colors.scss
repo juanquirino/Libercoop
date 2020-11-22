@@ -1,0 +1,154 @@
+$color-base: #333333;
+$color-base-light: #313234;
+$color-base-light2: #707070;
+
+$color-border: #DDDDDD;
+
+
+$color-black: #000000;
+
+$color-light: #ffffff;
+$color-light-secodnary: #fafafa;
+
+$color-primary: #F83F00;
+$color-primary-darken: darken($color-primary, 20%);
+$color-primary-lighten: lighten($color-primary, 20%);
+
+$color-secondary: #002e75;
+$color-secondary-lighten: ligthen($color-secondary, 20%);
+
+$color-succes: #20c794;
+
+$color-internal-link: #138BB2;
+$color-external-link: #0084EE;
+
+$color-lightblue: #0f8be6;
+$color-lightblue-lighten: #28C3F7;
+
+$color-gray: #dddddd;
+$color-gray-light: #efefef;
+
+.text {
+  &-primary {
+    color: $color-primary !important;
+    &:hover {
+      color: $color-primary !important;
+    }
+
+    &-darken {
+      color: $color-primary-darken !important;
+    }
+  }
+
+  &-secondary {
+    color: $color-secondary !important;
+
+    &-lighten {
+      color: $color-secondary-lighten !important;
+    }
+  }
+
+  &-succes {
+    color: $color-succes !important;
+  }
+
+  &-lightblue {
+    color: $color-lightblue !important;
+
+    &-lighten {
+      color: $color-lightblue-lighten !important;
+    }
+  }
+
+  &-gray {
+    color: $color-gray !important;
+
+    &-light {
+      color: $color-gray-light !important;
+    }
+  }
+
+  &-light {
+    color: $color-light !important;
+  }
+
+  &-link {
+    color: $color-internal-link;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: $color-primary !important;
+
+    &-darken {
+      background-color: $color-primary-darken !important;
+    }
+  }
+
+  &-secondary {
+    background-color: $color-secondary !important;
+
+    &-lighten {
+      background-color: $color-secondary-lighten !important;
+    }
+  }
+
+  &-succes {
+    background-color: $color-succes !important;
+  }
+
+  &-lightblue {
+    background-color: $color-lightblue !important;
+
+    &-lighten {
+      background-color: $color-lightblue-lighten !important;
+    }
+  }
+
+  &-gray {
+    background-color: $color-gray !important;
+
+    &-light {
+      background-color: $color-gray-light !important;
+    }
+  }
+  &-black {
+    background-color: $color-black !important;
+  }
+  
+  &-internal-link {
+    background-color: $color-internal-link !important;
+  }
+
+}
+
+.border{
+  &-primary {
+    border-color: $color-primary !important;
+  }
+  &-secondary {
+    border-color: $color-secondary !important;
+  }
+}
+
+a {
+  &.text-primary {
+    &:focus,
+    &:hover {
+      color: $color-primary-lighten !important;
+    }
+  }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: $color-primary;
+  background-color: $color-primary;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+  color: #fff;
+  border-color: $color-primary;
+  background-color: $color-primary;
+}

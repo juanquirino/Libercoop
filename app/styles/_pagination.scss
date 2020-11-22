@@ -1,0 +1,17 @@
+.pagination {
+  .page-item {
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        border: 0;
+        margin: 0;
+        color: $color-base;
+      }
+    }
+
+    .page-link {
+      color: $color-primary;
+    }
+  }
+}

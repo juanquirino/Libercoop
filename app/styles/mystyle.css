@@ -1,0 +1,94 @@
+/* =Style CSS Libercoop -------------------------------------------------------------- */
+
+/** Position **/
+
+.r-0 {
+    right: 0;
+}
+.l-0 {
+    left: 0;
+}
+.t-0 {
+    top: 0;
+}
+.b-0 {
+    bottom: 0;
+}
+.all-0{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/** Z-index **/
+
+.zindex-99 {
+    z-index: 99;
+}
+
+/** Carousel Components **/
+
+
+.carousel-control-next, .carousel-control-prev {
+    width: 2%;
+}
+
+.bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(248 63 0 / 0.5);
+    height: 100%;
+    width: 75%;
+    -moz-border-radius-bottomright: 40% 70%;
+    border-bottom-right-radius: 40% 70%;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    width: 40px;
+}
+
+/** Card Components**/
+
+.icon-card {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    display: flex;
+    align-items: center;
+}
+.svg-card {
+    margin: 0 auto;
+    display: block;
+}
+
+path#icon {
+    fill: #F83F00;
+}
+
+.card:hover .icon-card {
+    background: #F83F00;
+}
+
+.card:hover path#icon {
+    fill: #ffffff;
+}
+
+/** HR **/
+
+.hr {
+    height: 7px;
+    background: #F83F00;
+    width:10%;
+}
