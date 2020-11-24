@@ -26,9 +26,7 @@
 a {
     color: #333333;
 }
-.h2, h2 {
-    color: #002E75;
-}
+
 .btn-primary {
     color: #fff;
     background-color: #F83F00;
@@ -50,7 +48,6 @@ a {
     background-color: #138BB2;
     border-color: #138BB2;
 }
-
 
 /** Z-index **/
 
@@ -92,7 +89,7 @@ a {
 
 .bg-slide {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
     z-index: -1;
     background-color: rgb(248 63 0 / 0.5);
