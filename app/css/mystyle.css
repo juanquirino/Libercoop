@@ -1,5 +1,9 @@
 /* =Style CSS Libercoop -------------------------------------------------------------- */
 
+body {
+    color:#333333;
+}
+
 /** Position **/
 
 .r-0 {
@@ -49,10 +53,47 @@ a {
     border-color: #138BB2;
 }
 
+.bg-primary {
+    background-color: #F83F00 !important;
+    border-color: #F83F00;
+}
+
+.bg-secondary {
+    background-color: #EFEFEF!important;
+}
+
+h2, .h2, .h5, h5 {
+    color: #002E75;
+}
+
+.text-info {
+    color: #138BB2;
+}
+
+.list-unstyled i {
+    color: #F83F00;
+}
+
+.btn-light {
+    color: #F83F00;
+}
+
+/* lista footer */
+
+.list-unstyled li {
+    margin: 5px 0;
+}
+
 /** Z-index **/
 
 .zindex-99 {
     z-index: 99;
+}
+
+/* ul */
+
+::marker {
+    color:#138BB2;
 }
 
 /* Titles*/
@@ -273,15 +314,6 @@ path#icon {
   .slick-arrow.slick-hidden {
       display: none;
   }
-
-  /* back to top */
-
-  .back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
 
 /* Toast */
 
