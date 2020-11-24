@@ -20,14 +20,13 @@
     bottom: 0;
     left: 0;
 }
-
+.text-title {
+    color: #002E75;
+}
 /** Colores **/
 
 a {
     color: #333333;
-}
-.h2, h2 {
-    color: #002E75;
 }
 .btn-primary {
     color: #fff;
