@@ -57,7 +57,15 @@ a {
     background-color: #F83F00 !important;
     border-color: #F83F00;
 }
-
+.btn-outline-primary {
+    border-color: #F83F00;
+    color: #F83F00;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #F83F00;
+    border-color: #F83F00;
+}
 .bg-secondary {
     background-color: #EFEFEF!important;
 }
@@ -327,4 +335,50 @@ path#icon {
         top: 5px;
         right: 5px;
     }
+}
+
+/*breadcrumb*/ 
+
+.breadcrumb a, .breadcrumb a:hover {
+    color: white;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #ffffff;
+    content: "/";
+}
+
+/* Jumbotron */
+
+.img-header {
+    background-color: rgb(255 87 34 / 0.6)!important;
+    overflow: hidden;
+    border-radius: 0;
+    height: 35vh;
+}
+.img-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+@media (max-width: 576px) {  
+    .img-jumbotron img {
+        width: auto !important;
+    }
+}
+
+.img-jumbotron img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
 }
