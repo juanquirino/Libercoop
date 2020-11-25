@@ -479,3 +479,11 @@ path#icon {
     overflow: initial !important;
 
 }
+
+/* Destacar Text Blog*/
+
+.destacar i {
+    margin: 0 10px;
+    opacity: 0.3;
+    font-size: 2rem;
+}
