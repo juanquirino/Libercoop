@@ -8,6 +8,9 @@ body {
     outline: 0;
     box-shadow: none;
 }
+hr.divisor {
+    border-top: 1px solid #dee2e6 !important;
+}
 
 /** Position **/
 
