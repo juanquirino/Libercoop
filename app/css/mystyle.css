@@ -211,14 +211,6 @@ path#icon {
     fill: #F83F00;
 }
 
-.card:hover .icon-card {
-    background: #F83F00;
-}
-
-.card:hover path#icon {
-    fill: #ffffff;
-}
-
 /** HR **/
 
 .hr {
