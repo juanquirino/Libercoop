@@ -107,7 +107,9 @@ h2, .h2, .h5, h5, h6, .h6 {
 .btn-light {
     color: #F83F00;
 }
-
+.badge-primary {
+    background-color: #F83F00;
+}
 .btn-outline-secondary:hover {
     color: #F83F00;
     border-color: #F83F00;
@@ -605,4 +607,12 @@ path#icon {
 .icon-pill .svg-card {
     width: 30px;
     height: 100%;
+}
+
+/* hide password */
+
+.eye-password a {
+    position: absolute;
+    right: 20px;
+    top: 7px;
 }
