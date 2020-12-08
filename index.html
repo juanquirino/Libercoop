@@ -16,6 +16,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
+
         <!-- Cookie Modal -->
         <div class="modal fade modal-bottom" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -518,6 +519,8 @@
             </div>
         </main>
 
+        <!-- Back To Top-->
+        <button id="topBtn" class="btn bg-secondary rounded-circle">TOP</button>
         <!-- Footer -->
         <footer class="pt-5 bg-secondary">
             <div class="container">
@@ -565,13 +568,13 @@
                         <h5>Contacto</h5>
                         <ul class="list-unstyled text-small">
                             <li>
-                                <a class="text-muted" href="#"><i class="fas fa-map-pin"></i> Alfredo Barros Errázuriz #1900 Of. 202, Providencia, Santiago.</a>
+                                <a class="text-muted" href="#"><img src="app/images/location.svg"> Alfredo Barros Errázuriz #1900 Of. 202, Providencia, Santiago.</a>
                             </li>
                             <li>
-                                <a class="text-muted" href="#"><i class="fas fa-phone-alt"></i> (+56 2) 2307 0400</a>
+                                <a class="text-muted" href="#"><img src="app/images/phone-call.svg"> (+56 2) 2307 0400</a>
                             </li>
                             <li>
-                                <a class="text-muted" href="#"><i class="fas fa-envelope"></i> contacto@libercoop.cl</a>
+                                <a class="text-muted" href="#"><img src="app/images/location.svg"> contacto@libercoop.cl</a>
                             </li>
                         </ul>
                     </div>
@@ -684,6 +687,7 @@
         <script src="https://kit.fontawesome.com/e726eba805.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="app/js/script.js"></script>
         <script>
             $(document).ready(function () {
                 $(".customer-logos").slick({
@@ -709,6 +713,7 @@
                         },
                     ],
                 });
+
             });
             $("#myToast").toast("show");
             $("#cookieModal").modal("show");
