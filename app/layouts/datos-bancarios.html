@@ -47,17 +47,21 @@
         </nav>
 
         <!-- Breadcrumb Components -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 bg-primary rounded-0">
-                <li class="breadcrumb-item text-white">
-                    <a href="#"><strong>Home</strong></a>
+        <nav aria-label="breadcrumb" class="position-absolute w-100 breadcrumb-cont">
+            <div class="container">
+                <div class="row">
+            <ol class="breadcrumb mb-0 rounded-0 bg-transparent">
+                <li class="breadcrumb-item text-primary breadcrumb-v2">
+                    <a class="text-primary" href="#"><strong>Home</strong></a>
                 </li>
-                <li class="breadcrumb-item active text-white" aria-current="page">Datos Bancarios</li>
+                <li class="breadcrumb-item active text-primary breadcrumb-v2" aria-current="page">Datos Bancarios</li>
             </ol>
+        </div>
+        </div>
         </nav>
         <!-- Breadcrumb Components -->
 
-        <main role="main">
+        <div role="main">
             <!-- Card List -->
             <div class="container-fluid p-3 bg-light">
                 <div class="container my-5">
@@ -86,7 +90,7 @@
                                         <!--form panels-->
                                         <div class="row">
                                             <div class="col-12">
-                                                <form class="multisteps-form__form">
+                                                <div class="multisteps-form__form">
                                                     <!--single form panel-->
                                                     <div class="multisteps-form__panel js-active" data-animation="scaleIn">
                                                         <div class="card border-0 bg-light mb-3">
@@ -240,7 +244,7 @@
                                                                     <div class="col">
                                                                         <div class="media py-2 ">
                                                                             <div class="media-body px-2 align-self-center">
-                                                                                <h6 class="h6 card-title mb-0">Crédito de Consumo</h5>
+                                                                                <h6 class="h6 card-title mb-0">Crédito de Consumo</h6>
                                                                                 <p class="card-text"><strong>$2.500.000</strong></p>
                                                                             </div>
                                                                         </div>
@@ -278,7 +282,7 @@
                                                                         <div class="col">
                                                                             <div class="media py-2 ">
                                                                                 <div class="media-body px-2 align-self-center">
-                                                                                    <h6 class="h6 card-title mb-0">Tipo de Cuenta</h5>
+                                                                                    <h6 class="h6 card-title mb-0">Tipo de Cuenta</h6>
                                                                                     <p class="card-text"><strong>Cuenta Vista</strong></p>
                                                                                 </div>
                                                                             </div>
@@ -286,7 +290,7 @@
                                                                         <div class="col">
                                                                             <div class="media py-2 ">
                                                                                 <div class="media-body px-2 align-self-center">
-                                                                                    <h6 class="h6 card-title mb-0">Nº de Cuenta</h5>
+                                                                                    <h6 class="h6 card-title mb-0">Nº de Cuenta</h6>
                                                                                     <p class="card-text"><strong>00009876</strong></p>
                                                                                 </div>
                                                                             </div>
@@ -302,7 +306,7 @@
                                                             <button class="btn btn-primary ml-auto" type="button" title="Send">Volver a Libercoop</button>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -312,13 +316,13 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
 
         <!--MODAL DETALLE-->
 
 <!-- Modal -->
 <div class="modal fade" id="verDetalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-0">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">

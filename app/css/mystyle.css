@@ -1,3 +1,114 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-Black.woff2') format('woff2'),
+        url('AvenirLT-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Oblique.woff2') format('woff2'),
+        url('AvenirLT-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-BlackOblique.woff2') format('woff2'),
+        url('AvenirLT-BlackOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Roman.woff2') format('woff2'),
+        url('AvenirLT-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-Heavy.woff2') format('woff2'),
+        url('AvenirLT-Heavy.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 45 Book';
+    src: url('AvenirLT-BookOblique.woff2') format('woff2'),
+        url('AvenirLT-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 35';
+    src: url('AvenirLT-Light.woff2') format('woff2'),
+        url('AvenirLT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 35';
+    src: url('AvenirLT-LightOblique.woff2') format('woff2'),
+        url('AvenirLT-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 45 Book';
+    src: url('AvenirLT-Book.woff2') format('woff2'),
+        url('AvenirLT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-MediumOblique.woff2') format('woff2'),
+        url('AvenirLT-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('AvenirLT-Medium.woff2') format('woff2'),
+        url('AvenirLT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('AvenirLT-HeavyOblique.woff2') format('woff2'),
+        url('AvenirLT-HeavyOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 /* =Style CSS Libercoop -------------------------------------------------------------- */
 
 body {
@@ -46,7 +157,7 @@ a {
 }
 .btn-primary:hover {
     color: #333333;
-    background-color: #F83F00;
+    background-color: #b3b3b3;
     border-color: #F83F00;
 }
 
@@ -94,6 +205,11 @@ a {
 
 h2, .h2, .h5, h5, h6, .h6 {
     color: #002E75;
+    font-family: 'Avenir LT 65';
+}
+h2, .h2 {
+    font-family: 'Avenir LT 65';
+    font-weight: bold;
 }
 
 .text-info {
@@ -371,6 +487,9 @@ path#icon {
 .breadcrumb a, .breadcrumb a:hover {
     color: white;
 }
+.breadcrumb-cont {
+    z-index: 1;
+}
 .breadcrumb-item+.breadcrumb-item::before {
     display: inline-block;
     padding-right: .5rem;
@@ -382,6 +501,15 @@ path#icon {
     padding-right: .5rem;
     color: #ffffff;
     content: "/";
+}
+.breadcrumb-item.breadcrumb-v2+.breadcrumb-item.breadcrumb-v2::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #F83F00;
+    content: "/";
+}
+.breadcrumb .breadcrumb-v2 a, .breadcrumb .breadcrumb-v2 a:hover {
+    color: #F83F00;
 }
 
 /* Jumbotron */
@@ -441,7 +569,21 @@ path#icon {
     top: 20px;
     right: 10px;
 }
-
+.d-arrow2 {
+    top: 0;
+    right: 10px;
+}
+.accordion2 a[aria-expanded="false"] .up {
+    display: none;
+}
+.accordion2 a[aria-expanded="true"] .down {
+    display: none;
+}
+@media (max-width: 576px) { 
+.accordion2 {
+    margin: 0 0 15px 0;
+}
+}
 /* Card Col-6 */
 
 @media (max-width: 576px) {  
@@ -616,4 +758,70 @@ path#icon {
     right: 20px;
     top: 7px;
 }
-/* table dctos */
+/* modal */
+
+.modal-bottom .modal-dialog {
+    position:fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+}
+
+.modal-backdrop {
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+}
+@media (min-width: 768px) {
+    .collapse.dont-collapse-sm {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+  }
+
+/* NAV */
+
+/* rows */
+
+.dropdown-menu.columns-2 {
+	min-width: 500px;
+}
+.dropdown-multicol2>.dropdown-col{
+    display:inline-block;
+    width: 32%;
+}
+.multi-column-dropdown {
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #999;
+}
+.category-span {
+    padding: .25rem 1.5rem;
+}
+.pa-foto-nav {
+    padding: .25rem 1rem;
+}
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+    }
+    .dropdown > .btn {
+        padding: .5rem 0;
+    }
+}

@@ -13,31 +13,39 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
         <link rel="stylesheet" href="app/css/mystyle.css" />
         <link href="app/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
-
         <!-- Cookie Modal -->
-          <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-bottom modal-lg" role="document">
-              <div class="modal-content bg-primary">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title text-white" id="modalLongTitle">Esta página web usa cookies <i class="fas fa-cookie-bite"></i></h5>
-                  </div>
-                <div class="modal-body">
-                  <div class="notice d-flex justify-content-between align-items-center">
-                    <div class="cookie-text text-white">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios. Más información <a class="text-white" href="#"><strong>aquí.</strong></a></div>
-                    <div class="buttons d-flex flex-column flex-lg-row">
-
+        <div class="modal fade modal-bottom" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content bg-primary">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title text-white" id="modalLongTitle">Esta página web usa cookies</h5>
                     </div>
-                  </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="modal-body">
+                                <div class="notice d-flex justify-content-between align-items-center">
+                                    <div class="cookie-text text-white">
+                                        Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga
+                                        del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que
+                                        haya hecho de sus servicios. Más información <a class="text-white" href="#"><strong>aquí.</strong></a>
+                                    </div>
+                                    <div class="buttons d-flex flex-column flex-lg-row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="modal-footer border-0">
+                                <a href="#a" class="btn btn-outline-light btn-lg" data-dismiss="modal">Cancelar</a>
+                                <a href="#a" class="btn btn-light btn-lg" data-dismiss="modal">Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer border-0">
-                    <a href="#a" class="btn btn-outline-light btn-lg" data-dismiss="modal">Cancelar</a>
-                    <a href="#a" class="btn btn-light btn-lg" data-dismiss="modal">Aceptar</a>
-                  </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- End Cookie Modal -->
 
         <!-- Toast Components -->
@@ -63,12 +71,65 @@
 
                 <div class="collapse navbar-collapse" id="navbarsExample07XL">
                     <ul class="navbar-nav mr-auto offset-md-4">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="app/layouts/beneficios.html">Beneficios</a>
-                        </li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="productos-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Productos
+                            </button>
+                            <div class="dropdown-menu multi-column columns-2" aria-labelledby="productos-nav">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="multi-column-dropdown">
+                                            <a class="dropdown-item" href="#">Créditos</a>
+                                            <a class="dropdown-item" href="#">Ahorros</a>
+                                            <a class="dropdown-item" href="#">Depósito a Plazo</a>
+                                            <a class="dropdown-item" href="#">Cuota de Participación</a>
+                                            <div class="dropdown-divider"></div>
+                                            <span class="text-primary category-span"><small>Empresas</small></span>
+                                            <a class="dropdown-item" href="#">Crédito PYME</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="multi-column-dropdown pa-foto-nav">
+                                            <div class="card w-100">
+                                                <img src="app/images/fotofolia-1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body bg-light">
+                                                  <h5 class="card-title">Crédito de Consumo</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title.</p>
+                                                  <a href="#" class="btn btn-primary">Simular</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="productos-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Beneficios
+                            </button>
+                            <div class="dropdown-menu multi-column columns-2" aria-labelledby="productos-nav">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="multi-column-dropdown">
+                                            <a class="dropdown-item" href="app/layouts/beneficios.html">Beneficios</a>
+                                            <a class="dropdown-item" href="#">Ser socio Cooperativo</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="multi-column-dropdown pa-foto-nav">
+                                            <div class="card w-100">
+                                                <img src="app/images/fotofolia-2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body bg-light">
+                                                  <h5 class="card-title">Red de Clínicas Uno Salud Dental</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title.</p>
+                                                  <a href="#" class="btn btn-primary">Ver más</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="app/layouts/quienes-somos.html" tabindex="-1" aria-disabled="true">Quienes Somos</a>
                         </li>
@@ -288,7 +349,7 @@
             </div>
 
             <!-- Section Beneficios -->
-            <div class="container-fluid bg-light p-3 mt-5">
+            <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid bg-light p-3 mt-5">
                 <div class="container mt-5 mb-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -309,7 +370,7 @@
             <!-- End Section Beneficios -->
 
             <!-- Section Porque Libercoop -->
-            <div class="container-fluid p-3">
+            <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid p-3">
                 <div class="container mt-5 mb-5">
                     <div class="row">
                         <div class="col-md-6 mb-4"><img class="img-fluid mx-auto" src="app/images/startup-life-pana.svg" /></div>
@@ -327,7 +388,7 @@
             <!-- End Section Porque Libercoop -->
 
             <!-- Section Portabilidad Financiera -->
-            <div class="container-fluid bg-light p-3">
+            <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid bg-light p-3">
                 <div class="container mt-5 mb-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -346,7 +407,7 @@
             <!-- End Section Beneficios -->
 
             <!-- Section Blog y Noticias -->
-            <div class="container-fluid p-3">
+            <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid p-3">
                 <div class="container mt-5 mb-5">
                     <div class="row justify-content-center">
                         <div class="col-md-6 text-center mb-5">
@@ -399,7 +460,7 @@
             <!-- End Blog y Noticias -->
 
             <!-- Section Libercoop en los medios -->
-            <div class="container-fluid p-3 bg-light">
+            <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid p-3 bg-light">
                 <div class="container mt-5 mb-5">
                     <div class="row justify-content-center">
                         <div class="col-md-6 text-center mb-5">
@@ -461,7 +522,7 @@
         <footer class="pt-5 bg-secondary">
             <div class="container">
                 <div class="row">
-                    <div class="col col-sm">
+                    <div class="col-6 col-sm">
                         <h5>Productos</h5>
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="#">Créditos</a></li>
@@ -471,7 +532,7 @@
                             <li><a class="text-muted" href="#">Crédito PYME</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm">
+                    <div class="col-6 col-sm">
                         <h5>Información Institucional</h5>
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="app/layouts/blog.html">Blog</a></li>
@@ -482,7 +543,7 @@
                             <li><a class="text-muted" href="#">Sucursales</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col col-sm">
+                    <div class="col-6 col-sm">
                         <h5>Información de Interés</h5>
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="app/layouts/portabilidad-solicitud.html">Políticas De Privacidad</a></li>
@@ -490,7 +551,7 @@
                             <li><a class="text-muted" href="#">Línea de Denuncias</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-sm">
+                    <div class="col-6 col-sm">
                         <h5>Información Legal</h5>
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="#">Alzamiento de Garantías</a></li>
@@ -503,9 +564,15 @@
                     <div class="col-12 col-sm">
                         <h5>Contacto</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#"><i class="fas fa-map-pin"></i> Alfredo Barros Errázuriz #1900 Of. 202, Providencia, Santiago.</a></li>
-                            <li><a class="text-muted" href="#"><i class="fas fa-phone-alt"></i> (+56 2) 2307 0400</a></li>
-                            <li><a class="text-muted" href="#"><i class="fas fa-envelope"></i> contacto@libercoop.cl</a></li>
+                            <li>
+                                <a class="text-muted" href="#"><i class="fas fa-map-pin"></i> Alfredo Barros Errázuriz #1900 Of. 202, Providencia, Santiago.</a>
+                            </li>
+                            <li>
+                                <a class="text-muted" href="#"><i class="fas fa-phone-alt"></i> (+56 2) 2307 0400</a>
+                            </li>
+                            <li>
+                                <a class="text-muted" href="#"><i class="fas fa-envelope"></i> contacto@libercoop.cl</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -616,6 +683,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/e726eba805.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             $(document).ready(function () {
                 $(".customer-logos").slick({
@@ -643,7 +711,8 @@
                 });
             });
             $("#myToast").toast("show");
-            $('#cookieModal').modal('show');
+            $("#cookieModal").modal("show");
+            AOS.init();
         </script>
     </body>
 </html>
