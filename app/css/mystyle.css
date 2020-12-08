@@ -618,11 +618,20 @@ path#icon {
 
 /* Destacar Text Blog*/
 
-.destacar i {
-    margin: 0 10px;
-    opacity: 0.3;
-    font-size: 2rem;
+.comillas-l {
+    left: -50px;
+    width: 50px;
+    top: 0;
 }
+
+.comillas-r {
+    right: -50px;
+    width: 50px;
+    bottom: 0;
+}
+
+/* End Destacar Text Blog*/
+
 
 .tab {
     display: none;
