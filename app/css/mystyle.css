@@ -199,6 +199,9 @@ a {
 .text-primary {
     color: #F83F00!important;
 }
+.text-secondary {
+    color: #002E75!important;
+}
 .border-primary {
     border-color: #F83F00!important;
 }
