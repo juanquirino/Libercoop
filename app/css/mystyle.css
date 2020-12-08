@@ -616,6 +616,18 @@ path#icon {
 
 }
 
+/* Blog */
+
+.icon-destacar {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 15px;
+}
+.category-icon {
+    margin: 12px;
+}
+
 /* Destacar Text Blog*/
 
 .comillas-l {
