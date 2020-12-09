@@ -924,3 +924,12 @@ path#icon {
 .page-link:hover img {
     opacity: 0.6;
 }
+
+.square-3 {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}s
