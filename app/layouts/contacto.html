@@ -203,7 +203,7 @@
             <div class="container-fluid bg-light p-3">
                 <div class="container mt-5 mb-5">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 align-self-center">
                             <h3 class="h2">Formulario de contacto</h3>
                             <div class="hr mb-3"></div>
                             <p>
@@ -213,26 +213,32 @@
                                 <a href="#"><img class="mr-2" src="../images/message.svg">contacto@libercoop.cl</a>
                             </p>
                         </div>
-                        <div class="col-md-6 mt-4">
+                        <div class="col-md-6 mt-4 align-self-center">
                             <div class="card p-4">
                                 <form>
-                                    <div class="form-group">
-                                        <label for="name" class="h6">Nombre</label>
+                                    <div class="container">
+                                        <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name" class="h6"><strong>Nombre</strong></label>
                                         <input type="text" class="form-control" id="name" aria-describedby="emailHelp" />
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email-form" class="h6">Email</label>
+                                    <div class="form-group col-md-6">
+                                        <label for="email-form" class="h6"><strong>Email</strong></label>
                                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
                                         <small id="email-form" class="form-text text-danger">Mensaje de error</small>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="password-form" class="h6">Mensaje</label>
+                                    <div class="form-group col-md-12">
+                                        <label for="password-form" class="h6"><strong>Mensaje</strong></label>
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         <small id="contador" class="form-text float-right">150</small>
                                     </div>
+                                    <div class="form-group col-md-12">
                                     <div class="form-group mt-4">
                                         <button type="submit" class="btn btn-primary mx-auto d-block px-5">Enviar</button>
                                     </div>
+                                    </div>
+                                </div>
+                                </div>
                                 </form>
                             </div>
                         </div>
