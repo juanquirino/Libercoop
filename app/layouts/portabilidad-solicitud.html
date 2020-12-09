@@ -129,17 +129,15 @@
                         </div>
                         <div class="col-md-7">
                             <div class="card">
-                                <div class="card-body p-5">
+                                <div class="card-body p-5 px-xs-2">
                                     <div class="multisteps-form">
                                         <!--progress bar-->
-                                        <div class="row">
-                                            <div class="col-12 mr-auto mb-5">
-                                                <div class="multisteps-form__progress">
-                                                    <button class="multisteps-form__progress-btn js-active" type="button" title="User Info"></button>
-                                                    <button class="multisteps-form__progress-btn" type="button" title="Address"></button>
-                                                    <button class="multisteps-form__progress-btn" type="button" title="Order Info"></button>
-                                                    <button class="multisteps-form__progress-btn" type="button" title="Comments"></button>
-                                                </div>
+                                        <div class="cont-miltisteps">
+                                            <div class="multisteps-form__progress">
+                                                <button class="multisteps-form__progress-btn js-active" type="button" title="User Info"></button>
+                                                <button class="multisteps-form__progress-btn" type="button" title="Address"></button>
+                                                <button class="multisteps-form__progress-btn" type="button" title="Order Info"></button>
+                                                <button class="multisteps-form__progress-btn" type="button" title="Comments"></button>
                                             </div>
                                         </div>
                                         <!--form panels-->
@@ -171,13 +169,14 @@
                                                             <div class="form-row mt-4">
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Rut">Rut</label>
+                                                                        <label class="text-secondary" for="Nombres ">Nombres</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
+
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Serie">Nº de Serie o Documento</label>
+                                                                        <label class="text-secondary"  for="Serie">Apellidos</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
@@ -185,14 +184,13 @@
                                                             <div class="form-row">
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Nombres">Nombres</label>
+                                                                        <label class="text-secondary" for="Rut">Rut</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
-
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Serie">Apellidos</label>
+                                                                        <label class="text-secondary" for="Serie">Nº de Serie Documento</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
@@ -200,15 +198,20 @@
                                                             <div class="form-row">
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Email">E-mail</label>
+                                                                        <label class="text-secondary" for="Email">E-mail</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Tel">Teléfono</label>
-                                                                        <input class="multisteps-form__input form-control" type="text" placeholder="" />
+                                                                        <label class="text-secondary" for="Tel">Celular</label>
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text bg-white">+59</span>
+                                                                          </div>
+                                                                        <input class="multisteps-form__input form-control" type="number" placeholder="9" />
+                                                                    </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -216,7 +219,7 @@
                                                             <div class="form-row">
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Region">Región</label>
+                                                                        <label class="text-secondary" for="Region">Región</label>
                                                                         <select class="form-control">
                                                                             <option>Selecciona tu región</option>
                                                                             <option>Lorem</option>
@@ -225,7 +228,7 @@
                                                                 </div>
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Region">Comuna</label>
+                                                                        <label class="text-secondary" for="Region">Comuna</label>
                                                                         <select class="form-control">
                                                                             <option>Selecciona tu comuna</option>
                                                                             <option>Lorem</option>
@@ -237,7 +240,7 @@
                                                             <div class="form-row">
                                                                 <div class="col-12">
                                                                     <div class="form-group">
-                                                                        <label for="Domicilio">Domicilio</label>
+                                                                        <label class="text-secondary" for="Domicilio">Domicilio</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
@@ -246,7 +249,7 @@
                                                             <div class="form-row">
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Region">Tipo de empleo</label>
+                                                                        <label class="text-secondary" for="Region">Tipo de empleo</label>
                                                                         <select class="form-control">
                                                                             <option>Seleccionar</option>
                                                                             <option>Lorem</option>
@@ -255,7 +258,7 @@
                                                                 </div>
                                                                 <div class="col-12 col-sm-6">
                                                                     <div class="form-group">
-                                                                        <label for="Rut-empleador">Rut del empleador</label>
+                                                                        <label class="text-secondary" for="Rut-empleador">Rut del empleador</label>
                                                                         <input class="multisteps-form__input form-control" type="text" placeholder="" />
                                                                     </div>
                                                                 </div>
@@ -458,8 +461,8 @@
                                                             </div>
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group border-bottom">
-                                                                    <label class="col-12 text-secondary" for="Proveedor Financiero">Teléfono</label>
-                                                                    <span class="col-12">9 8765 4321</span>
+                                                                    <label class="col-12 text-secondary" for="Proveedor Financiero">Celular</label>
+                                                                    <span class="col-12">+569 8765 4321</span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
@@ -470,13 +473,13 @@
                                                             </div>
                                                             <h5 class="h5 mt-4 text-primary">Datos financieros y productos a portar</h5>
                                                             <div class="form-row mt-4">
-                                                                <div class="col-12 col-sm-6">
+                                                                <div class="col-12">
                                                                     <div class="form-group border-bottom">
                                                                         <label class="col-12 text-secondary" for="Proveedor Financiero">Proveedor financiero</label>
                                                                         <span class="col-12">Cooperativa Ahorrocop</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-12 col-sm-6">
+                                                                <div class="col-12">
                                                                     <div class="form-group border-bottom">
                                                                         <label class="col-12 text-secondary" for="Proveedor Financiero">Productos financieros</label>
                                                                         <span class="col-12">Crédito de consumo</span>
@@ -487,7 +490,7 @@
 
                                                         <div class="button-row d-flex mt-4">
                                                             <button class="btn btn-outline-secondary js-btn-prev" type="button" title="Prev">Anterior</button>
-                                                            <button class="btn btn-success ml-auto" type="button" title="Send">Volver al inicio</button>
+                                                            <button class="btn btn-primary ml-auto" type="button" title="Send">Volver al inicio</button>
                                                         </div>
                                                     </div>
                                                 </form>
