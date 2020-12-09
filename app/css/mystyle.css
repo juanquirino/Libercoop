@@ -908,4 +908,19 @@ path#icon {
     border: none;
     cursor: pointer;
     display: none;
-  }
+}
+/* Paginador */
+
+.page-link {
+    color: #555555 !important;
+    width: 40px;
+    height: 40px;
+}
+.page-link:hover {
+    color: #F83F00 !important;
+    background-color: transparent;
+    border-color: #F83F00;
+}
+.page-link:hover img {
+    opacity: 0.6;
+}
