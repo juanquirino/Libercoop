@@ -842,7 +842,13 @@ path#icon {
       height: auto !important;
       visibility: visible;
     }
-  }
+}
+@media (max-width: 767px) {
+
+    .modal-border-mobile .border-right {
+        border-right: none !important;
+    }
+}
 
 /* NAV */
 
