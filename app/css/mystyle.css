@@ -370,7 +370,10 @@ path#icon {
 .card-body {
     border-radius: 0.65rem;
 }
-
+.form-control:disabled, .form-control[readonly] {
+    background-color: transparent;
+    opacity: 1;
+}
 .shadow-sm {
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)!important;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)!important;
