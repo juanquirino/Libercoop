@@ -820,6 +820,15 @@ path#icon {
     position: absolute;
     left: -40px;
 }
+.icon-pill-2 {
+    width: 50px;
+    height: 50px;
+    background: white;
+}
+.icon-pill-2 .svg-card {
+    width: 30px;
+    height: 100%;
+}
 
 .icon-pill .svg-card {
     width: 30px;
@@ -909,19 +918,18 @@ path#icon {
 
 /** Back to Top **/
 
-#topBtn{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    font-size: 22px;
+.back-to-top {
     width: 50px;
     height: 50px;
-    background: #e74c3c;
-    color: white;
     border: none;
     cursor: pointer;
-    display: none;
+    background-color: #138BB2;
+    position: absolute;
+    padding: 12px;
+    right: 40px;
+    top: -25px;
 }
+
 /* Paginador */
 
 .page-link {
