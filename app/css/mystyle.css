@@ -830,7 +830,7 @@ path#icon {
     height: 100%;
 }
 
-.icon-pill .svg-card {
+.icon-pill-2 .svg-card {
     width: 30px;
     height: 100%;
 }
@@ -961,8 +961,14 @@ path#icon {
     font-weight: bold;
 }
 @media (min-width: 767px) {
+    .min-h-5 {
+        min-height: 530px;
+    }
     .min-h-4 {
         min-height: 345px;
+    }
+    .min-h-41 {
+        min-height: 380px;
     }
     .min-h-3 {
         min-height: 245px;
