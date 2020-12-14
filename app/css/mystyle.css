@@ -825,7 +825,7 @@ path#icon {
     height: 50px;
     background: white;
 }
-.icon-pill-2 .svg-card {
+.icon-pill .svg-card {
     width: 30px;
     height: 100%;
 }
@@ -964,4 +964,13 @@ path#icon {
     .min-h-4 {
         min-height: 345px;
     }
+    .min-h-3 {
+        min-height: 245px;
+    }
+}
+
+/* TABS */
+
+.nav-tabs .nav-link {
+    border-color: #dee2e6 !important;
 }
