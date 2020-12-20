@@ -294,30 +294,27 @@ h2, .h2 {
 
 /** Carousel Components **/
 
+:root {
+    --swiper-theme-color: #ffffff !important;
+}
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
 @media (max-width: 576px) {  
-    .carousel {
-        min-height: 30vh;
+    .bg-header {
+        height: auto !important;
+        width: 100%;
     }
-    .bg-slide {
-        width: 100% !important;
-        -moz-border-radius-bottomright:0;
-        border-bottom-right-radius: 0 !important;
-        background-color: #F83F00 !important;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        display: none;
-    }
-    .carousel-caption {
-        position: relative;
-    }
+}
+.img-swiper {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    width: 2%;
-}
-.carousel-item .img-header {
-    height: auto;
-}
 .bg-slide {
     position: absolute;
     top: 0;
@@ -330,10 +327,9 @@ h2, .h2 {
     border-bottom-right-radius: 40% 70%;
 }
 
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
 }
 
 /** Card Components**/
@@ -592,12 +588,6 @@ path#icon {
         background-size: auto;
         background-attachment: initial;
         background-position: center;
-    }
-    .bg-header {
-        position: absolute;
-        top: 0;
-        left: -190px;
-        height: 100%;
     }
 }
 

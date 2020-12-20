@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="app/css/mystyle.css" />
         <link href="app/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     </head>
 
     <!-- Nav Components -->
@@ -147,76 +149,78 @@
         </div>
 
         <main role="main">
+
+
+
             <!-- Carousel Components -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <!-- Carousel-item  -->
-                    <div class="carousel-item active">
-                        <img src="app/images/slide-1.jpg" class="img-fluid w-100 img-header" />
-                        <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
-                            <div class="container">
-                                <div class="col-md-6">
-                                    <div class="cont-header">
-                                    <h1>Pronto nos volveremos a encontrar.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
-                                </div>
-                                </div>
-                            </div>
-                            <img class="bg-header" src="app/images/img-background-color.svg">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="img-swiper" style="background-image: url('app/images/slide-1.jpg');"></div>
+                <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <div class="cont-header">
+                            <h1>Pronto nos volveremos a encontrar.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
+                        </div>
                         </div>
                     </div>
-                    <!-- End Carousel-item  -->
-                    <!-- Carousel-item  -->
-                    <div class="carousel-item">
-                        <img src="app/images/slide-1.jpg" class="img-fluid w-100 img-header" />
-                        <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
-                            <div class="container">
-                                <div class="col-md-6">
-                                    <div class="cont-header">
-                                    <h1>Pronto nos volveremos a encontrar.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
-                                </div>
-                                </div>
-                            </div>
-                            <img class="bg-header" src="app/images/img-background-color.svg">
-                        </div>
-                    </div>
-                    <!-- End Carousel-item  -->
-                    <!-- Carousel-item  -->
-                    <div class="carousel-item">
-                        <img src="app/images/slide-1.jpg" class="img-fluid w-100 img-header" />
-                        <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
-                            <div class="container">
-                                <div class="col-md-6">
-                                    <div class="cont-header">
-                                    <h1>Pronto nos volveremos a encontrar.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
-                                </div>
-                                </div>
-                            </div>
-                            <img class="bg-header" src="app/images/img-background-color.svg">
-                        </div>
-                    </div>
-                    <!-- End Carousel-item  -->
+                    <img class="bg-header d-none d-sm-block" src="app/images/img-background-color.svg">
+                    <img class="bg-header d-sm-none" src="app/images/img-background-color-mb.svg">
                 </div>
-                <a class="carousel-control-prev zindex-99" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next zindex-99" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-swiper" style="background-image: url('app/images/slide-1.jpg');"></div>
+                <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <div class="cont-header">
+                            <h1>Pronto nos volveremos a encontrar.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
+                        </div>
+                        </div>
+                    </div>
+                    <img class="bg-header d-none d-sm-block" src="app/images/img-background-color.svg">
+                    <img class="bg-header d-sm-none" src="app/images/img-background-color-mb.svg">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-swiper" style="background-image: url('app/images/slide-1.jpg');"></div>
+                <div class="carousel-caption text-left all-0 w-100 p-md-5 pt-75">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <div class="cont-header">
+                            <h1>Pronto nos volveremos a encontrar.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-outline-light btn-lg" href="#" role="button">Ver más</a></p>
+                        </div>
+                        </div>
+                    </div>
+                    <img class="bg-header d-none d-sm-block" src="app/images/img-background-color.svg">
+                    <img class="bg-header d-sm-none" src="app/images/img-background-color-mb.svg">
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
             </div>
             <!-- End Carousel Components -->
+
+
+
 
             <div class="container mt-5">
                 <div class="card shadow-sm border-0">
@@ -694,6 +698,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="text/javascript" src="app/js/script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".customer-logos").slick({
@@ -724,6 +730,27 @@
             $("#myToast").toast("show");
             $("#cookieModal").modal("show");
             AOS.init();
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                })
         </script>
     </body>
 </html>
